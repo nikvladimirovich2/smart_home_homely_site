@@ -49,7 +49,7 @@ const CONFIG = {
       sr: "Beograd, Srbija"
     },
     addressFull: {
-      en: "Krivi vir 13/1, Nis, Serbia",
+      en: "Nis, Serbia",
       sr: "Bulevar primer 1, 11000 Beograd"
     },
     workingHours: {
@@ -508,7 +508,7 @@ const CONFIG = {
     {
       q: { en: "Can I control the system without a smartphone?", sr: "Mogu li da upravljam sistemom bez pametnog telefona?" },
       a: {
-        en: "Yes. Wall-mounted panels, physical switches and voice assistants can all be configured alongside or instead of the mobile app.", 
+        en: "Yes. Wall-mounted panels, physical switches and voice assistants can all be configured alongside or instead of the mobile app.",
         sr: "Da. Zidni paneli, fizički prekidači i glasovni asistenti mogu se podesiti uz mobilnu aplikaciju ili umesto nje."
       }
     }
