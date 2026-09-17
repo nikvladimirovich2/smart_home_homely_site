@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Homely</title>
+<meta name="description" content="Get in touch with Homely for a free consultation on smart home or CCTV integration.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://homely.example/contacts.html">
+<meta name="theme-color" content="#0A0D12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Homely">
+<meta property="og:title" content="Contact — Homely">
+<meta property="og:description" content="Get in touch with Homely for a free consultation on smart home or CCTV integration.">
+<meta property="og:image" content="assets/img/og-cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contacts">
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" data-icon="house"></span>
+      <span data-brand-name>Homely</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" data-page="index" data-i18n="nav.home">Home</a>
+      <a href="services.html" data-page="services" data-i18n="nav.services">Services</a>
+      <a href="pricing.html" data-page="pricing" data-i18n="nav.pricing">Pricing</a>
+      <a href="automations.html" data-page="automations" data-i18n="nav.automations">Automations</a>
+<!--      <a href="portfolio.html" data-page="portfolio" data-i18n="nav.portfolio">Portfolio</a> -->
+      <a href="faq.html" data-page="faq" data-i18n="nav.faq">FAQ</a>
+      <a href="contacts.html" data-page="contacts" data-i18n="nav.contacts">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang-switch">
+        <button data-lang="en" type="button">EN</button>
+        <button data-lang="sr" type="button">SR</button>
+      </div>
+      <button class="icon-btn" data-theme-toggle type="button" aria-label="Toggle theme"><span data-theme-icon></span></button>
+      <a href="contacts.html" class="btn btn-primary btn-sm" data-i18n="nav.ctaBtn">Get a quote</a>
+      <button class="icon-btn nav-toggle" type="button" aria-label="Menu"><span class="hamburger"><span></span><span></span><span></span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero container">
+    <div class="eyebrow" data-i18n="contacts.eyebrow">Contact</div>
+    <h1 data-i18n="contacts.title">Let's talk about your property</h1>
+    <p data-i18n="contacts.lead">Fill in the form or reach us directly — a free, no-obligation site visit is the usual first step.</p>
+  </section>
+
+  <section class="section container" style="padding-top:0;">
+    <div class="contact-grid">
+
+      <!-- Контактная информация -->
+      <div class="contact-info-card glass reveal">
+        <div class="contact-row">
+          <span class="icon-btn" data-icon="phone" aria-hidden="true"></span>
+          <div>
+            <b data-i18n="contacts.phoneLabel">Phone</b>
+            <span><a href="tel:" data-contact-phone>+381 60 000 0000</a></span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <span class="icon-btn" data-icon="mail" aria-hidden="true"></span>
+          <div>
+            <b data-i18n="contacts.emailLabel">Email</b>
+            <span><a href="mailto:" data-contact-email>info@homely.example</a></span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <span class="icon-btn" data-icon="mapPin" aria-hidden="true"></span>
+          <div>
+            <b data-i18n="contacts.addressLabel">Address</b>
+            <span data-contact-address>Belgrade, Serbia</span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <span class="icon-btn" data-icon="clock" aria-hidden="true"></span>
+          <div>
+            <b data-i18n="contacts.hoursLabel">Working hours</b>
+            <span data-contact-hours>Mon–Sat, 09:00–19:00</span>
+          </div>
+        </div>
+
+        <div class="social-row">
+          <a class="icon-btn" href="#" data-social="instagram" target="_blank" rel="noopener" aria-label="Instagram" data-icon="instagram"></a>
+          <a class="icon-btn" href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook" data-icon="facebook"></a>
+          <a class="icon-btn" href="#" data-social="telegram" target="_blank" rel="noopener" aria-label="Telegram" data-icon="telegram"></a>
+          <a class="icon-btn" href="#" data-social="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp" data-icon="whatsapp"></a>
+          <a class="icon-btn" href="#" data-social="youtube" target="_blank" rel="noopener" aria-label="YouTube" data-icon="youtube"></a>
+        </div>
+
+        <div id="map-embed" class="map-embed"></div>
+      </div>
+
+      <!-- Форма (демо, без бэкенда) -->
+      <form id="contact-form" class="contact-form glass reveal">
+        <h3 data-i18n="contacts.formTitle">Send us a message</h3>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="f-name" data-i18n="contacts.nameLabel">Full name</label>
+            <input id="f-name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="f-phone" data-i18n="contacts.phoneFieldLabel">Phone</label>
+            <input id="f-phone" name="phone" type="tel" required autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="f-email" data-i18n="contacts.emailFieldLabel">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="f-property" data-i18n="contacts.propertyLabel">Property type</label>
+            <input id="f-property" name="property" type="text" placeholder="House / Apartment / Office">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-message" data-i18n="contacts.messageLabel">What are you looking for?</label>
+          <textarea id="f-message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="contacts.submitBtn">Send message</button>
+        <p class="form-note" data-i18n="contacts.formNote">This is a demo form — no data is sent anywhere. Connect it to your own email/CRM endpoint.</p>
+        <p id="form-success" class="mono" style="display:none; color:var(--accent); font-size:.85rem;"></p>
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark" data-icon="house"></span><span data-brand-name>Homely</span></a>
+        <p data-i18n="footer.about">Local smart home and CCTV integration across Serbia.</p>
+        <div class="social-row" style="margin-top:18px;">
+          <a class="icon-btn" href="#" data-social="instagram" target="_blank" rel="noopener" aria-label="Instagram" data-icon="instagram"></a>
+          <a class="icon-btn" href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook" data-icon="facebook"></a>
+          <a class="icon-btn" href="#" data-social="telegram" target="_blank" rel="noopener" aria-label="Telegram" data-icon="telegram"></a>
+          <a class="icon-btn" href="#" data-social="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp" data-icon="whatsapp"></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.company">Company</h4>
+        <ul>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+          <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.resources">Resources</h4>
+        <ul>
+          <li><a href="automations.html" data-i18n="nav.automations">Automations</a></li>
+          <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.getInTouch">Get in touch</h4>
+        <ul>
+          <li><a href="tel:" data-contact-phone>+381 60 000 0000</a></li>
+          <li><a href="mailto:" data-contact-email>info@homely.example</a></li>
+          <li><span data-contact-address>Belgrade, Serbia</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> <span data-brand-name>Homely</span>. <span data-i18n="footer.rights">All rights reserved.</span></span>
+      <span class="mono" style="color:var(--text-faint);">Built with HTML5 · CSS3 · Vanilla JS</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" type="button" aria-label="Back to top"><span data-icon="arrowUp"></span></button>
+
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/i18n-strings.js" defer></script>
+<script src="assets/js/icons.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

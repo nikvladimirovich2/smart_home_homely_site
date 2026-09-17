@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0D12"/>
+      <stop offset="100%" stop-color="#0F1B16"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.08" stroke="#ECEFF4" stroke-width="1">
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+  </g>
+  <circle cx="1000" cy="180" r="220" fill="#3ED598" opacity="0.10"/>
+  <path d="M120 300 220 220l100 80" stroke="#3ED598" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M145 280v90a8 8 0 0 0 8 8h140a8 8 0 0 0 8-8v-90" stroke="#ECEFF4" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="330" cy="210" r="10" fill="#3ED598"/>
+  <text x="120" y="440" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#ECEFF4">Homely</text>
+  <text x="120" y="486" font-family="Arial, sans-serif" font-size="26" fill="#8B93A7">Smart home &amp; CCTV integration, done locally</text>
+</svg>

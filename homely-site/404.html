@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Homely</title>
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0A0D12">
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="404">
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" data-icon="house"></span>
+      <span data-brand-name>Homely</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" data-page="index" data-i18n="nav.home">Home</a>
+      <a href="services.html" data-page="services" data-i18n="nav.services">Services</a>
+      <a href="pricing.html" data-page="pricing" data-i18n="nav.pricing">Pricing</a>
+      <a href="automations.html" data-page="automations" data-i18n="nav.automations">Automations</a>
+      <a href="portfolio.html" data-page="portfolio" data-i18n="nav.portfolio">Portfolio</a>
+      <a href="faq.html" data-page="faq" data-i18n="nav.faq">FAQ</a>
+      <a href="contacts.html" data-page="contacts" data-i18n="nav.contacts">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang-switch">
+        <button data-lang="en" type="button">EN</button>
+        <button data-lang="sr" type="button">SR</button>
+      </div>
+      <button class="icon-btn" data-theme-toggle type="button" aria-label="Toggle theme"><span data-theme-icon></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="container" style="min-height:70vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:80px 24px;">
+    <div class="eyebrow" data-i18n="error404.eyebrow">404</div>
+    <h1 style="margin-bottom:16px;" data-i18n="error404.title">This page went offline</h1>
+    <p style="max-width:48ch; margin-bottom:32px;" data-i18n="error404.lead">Like a sensor with a flat battery — the page you're looking for isn't reporting in. Let's get you back home.</p>
+    <a href="index.html" class="btn btn-primary" data-i18n="error404.cta">Back to homepage</a>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0;">
+      <span>&copy; <span data-year>2026</span> <span data-brand-name>Homely</span>. <span data-i18n="footer.rights">All rights reserved.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/i18n-strings.js" defer></script>
+<script src="assets/js/icons.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
