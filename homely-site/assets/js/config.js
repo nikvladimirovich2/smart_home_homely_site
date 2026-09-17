@@ -40,8 +40,8 @@ const CONFIG = {
   // 2. КОНТАКТЫ (placeholder — впишите свои)
   // ---------------------------------------------------------
   contact: {
-    phone: "+381 61 145 2522",
-    telegram: "nikvladimirovich",
+    phone: "+381 61 1111111",
+    telegram: "nikvlad",
     viberNumber: "381600000000",
     email: "nik@gmail.com",
     addressLine: {
