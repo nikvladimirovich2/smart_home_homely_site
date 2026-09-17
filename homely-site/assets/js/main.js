@@ -460,13 +460,38 @@
   }
 
   /* ---------------------------------------------------------
-     ФОРМА КОНТАКТОВ (демо, без бэкенда)
+     ФОРМА КОНТАКТОВ — открывает почтовый клиент посетителя
+     с предзаполненным письмом (mailto:), без бэкенда/сервиса.
   --------------------------------------------------------- */
+  function buildMailtoLink(data) {
+    const to = CONFIG.contact.email;
+    const subject = `New inquiry from ${data.name || "website"} — Homely`;
+    const lines = [
+      `Name: ${data.name}`,
+      `Phone: ${data.phone}`,
+      data.email ? `Email: ${data.email}` : null,
+      data.property ? `Property type: ${data.property}` : null,
+      "",
+      "Message:",
+      data.message
+    ].filter((l) => l !== null);
+    const body = lines.join("\n");
+    return `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  }
+
   function initContactForm() {
     const form = $("#contact-form");
     if (!form) return;
     form.addEventListener("submit", (e) => {
       e.preventDefault();
+      const data = {
+        name: $("#f-name", form).value.trim(),
+        phone: $("#f-phone", form).value.trim(),
+        email: $("#f-email", form).value.trim(),
+        property: $("#f-property", form).value.trim(),
+        message: $("#f-message", form).value.trim()
+      };
+      window.location.href = buildMailtoLink(data);
       const note = $("#form-success");
       if (note) {
         note.textContent = t(UI_STRINGS.contacts.formSuccess);

@@ -121,8 +121,8 @@ const UI_STRINGS = {
     propertyLabel: { en: "Property type", sr: "Tip objekta" },
     messageLabel: { en: "What are you looking for?", sr: "Šta vam je potrebno?" },
     submitBtn: { en: "Send message", sr: "Pošaljite poruku" },
-    formNote: { en: "This is a demo form — no data is sent anywhere. Connect it to your own email/CRM endpoint.", sr: "Ovo je demo formular — podaci se nikuda ne šalju. Povežite ga sa sopstvenim email/CRM sistemom." },
-    formSuccess: { en: "Thanks! This is a demo — connect the form to your backend to actually receive messages.", sr: "Hvala! Ovo je demo — povežite formular sa svojim sistemom da biste zaista primali poruke." }
+    formNote: { en: "Sending opens your email app with a pre-filled message to us — just hit send there.", sr: "Slanje otvara vašu email aplikaciju sa unapred popunjenom porukom — samo je pošaljite." },
+    formSuccess: { en: "Opening your email app now. If it didn't open, email us directly instead.", sr: "Otvaramo vašu email aplikaciju. Ako se nije otvorila, pišite nam direktno na email." }
   },
   footer: {
     about: { en: "Local smart home and CCTV integration for homes and businesses across Serbia, built on open platforms like Home Assistant.", sr: "Lokalna integracija pametnog doma i video nadzora za domove i firme širom Srbije, zasnovana na otvorenim platformama poput Home Assistant-a." },
