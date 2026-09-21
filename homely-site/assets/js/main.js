@@ -124,7 +124,6 @@
       "@type": "HomeAndConstructionBusiness",
       name: CONFIG.company.name,
       description: desc,
-      telephone: CONFIG.contact.phone,
       email: CONFIG.contact.email,
       address: {
         "@type": "PostalAddress",
@@ -142,10 +141,6 @@
   --------------------------------------------------------- */
   function fillGlobalPlaceholders() {
     $$("[data-brand-name]").forEach((el) => (el.textContent = CONFIG.company.name));
-    $$("[data-contact-phone]").forEach((el) => {
-      el.textContent = CONFIG.contact.phoneDisplay;
-      if (el.tagName === "A") el.href = "tel:" + CONFIG.contact.phone.replace(/\s+/g, "");
-    });
     $$("[data-contact-email]").forEach((el) => {
       el.textContent = CONFIG.contact.email;
       if (el.tagName === "A") el.href = "mailto:" + CONFIG.contact.email;
@@ -161,8 +156,8 @@
       if (CONFIG.social[key]) el.href = CONFIG.social[key];
     });
 
-    // WhatsApp / Viber быстрые ссылки
-    $$("[data-whatsapp-link]").forEach((el) => (el.href = CONFIG.social.whatsapp));
+    // Быстрая ссылка на email (кнопки "Email us directly")
+    $$("[data-email-link]").forEach((el) => (el.href = "mailto:" + CONFIG.contact.email));
 
     // Карта
     const mapWrap = $("#map-embed");
@@ -186,7 +181,6 @@
     renderBrands();
     renderTestimonials();
     renderFAQ();
-    renderPortfolio();
     renderHeroFlow();
     initFAQToggle();
     initScrollReveal();
@@ -358,23 +352,6 @@
       .join("");
   }
 
-  function renderPortfolio() {
-    const wrap = $("[data-render='portfolio']");
-    if (!wrap) return;
-    wrap.innerHTML = CONFIG.portfolio
-      .map(
-        (p) => `
-      <div class="portfolio-card glass reveal">
-        <div class="portfolio-img"><img src="${p.img}" alt="${t(p.title)}" loading="lazy" width="480" height="360"></div>
-        <div class="portfolio-body">
-          <span class="portfolio-tag">${t(p.tag)}</span>
-          <h3>${t(p.title)}</h3>
-        </div>
-      </div>`
-      )
-      .join("");
-  }
-
   function initFAQToggle() {
     $$(".faq-item").forEach((item) => {
       const q = $(".faq-q", item);
@@ -468,8 +445,7 @@
     const subject = `New inquiry from ${data.name || "website"} — Homely`;
     const lines = [
       `Name: ${data.name}`,
-      `Phone: ${data.phone}`,
-      data.email ? `Email: ${data.email}` : null,
+      `Email: ${data.email}`,
       data.property ? `Property type: ${data.property}` : null,
       "",
       "Message:",
@@ -486,7 +462,6 @@
       e.preventDefault();
       const data = {
         name: $("#f-name", form).value.trim(),
-        phone: $("#f-phone", form).value.trim(),
         email: $("#f-email", form).value.trim(),
         property: $("#f-property", form).value.trim(),
         message: $("#f-message", form).value.trim()

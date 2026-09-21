@@ -31,9 +31,9 @@
       <a href="services.html" data-page="services" data-i18n="nav.services">Services</a>
       <a href="pricing.html" data-page="pricing" data-i18n="nav.pricing">Pricing</a>
       <a href="automations.html" data-page="automations" data-i18n="nav.automations">Automations</a>
-<!--      <a href="portfolio.html" data-page="portfolio" data-i18n="nav.portfolio">Portfolio</a> -->
       <a href="faq.html" data-page="faq" data-i18n="nav.faq">FAQ</a>
       <a href="contacts.html" data-page="contacts" data-i18n="nav.contacts">Contact</a>
+      <a href="contacts.html" class="nav-cta-mobile" data-i18n="nav.ctaBtn">Get a quote</a>
     </nav>
     <div class="nav-actions">
       <div class="lang-switch">
@@ -61,13 +61,6 @@
       <!-- Контактная информация -->
       <div class="contact-info-card glass reveal">
         <div class="contact-row">
-          <span class="icon-btn" data-icon="phone" aria-hidden="true"></span>
-          <div>
-            <b data-i18n="contacts.phoneLabel">Phone</b>
-            <span><a href="tel:" data-contact-phone>+381 60 000 0000</a></span>
-          </div>
-        </div>
-        <div class="contact-row">
           <span class="icon-btn" data-icon="mail" aria-hidden="true"></span>
           <div>
             <b data-i18n="contacts.emailLabel">Email</b>
@@ -93,7 +86,6 @@
           <a class="icon-btn" href="#" data-social="instagram" target="_blank" rel="noopener" aria-label="Instagram" data-icon="instagram"></a>
           <a class="icon-btn" href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook" data-icon="facebook"></a>
           <a class="icon-btn" href="#" data-social="telegram" target="_blank" rel="noopener" aria-label="Telegram" data-icon="telegram"></a>
-          <a class="icon-btn" href="#" data-social="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp" data-icon="whatsapp"></a>
           <a class="icon-btn" href="#" data-social="youtube" target="_blank" rel="noopener" aria-label="YouTube" data-icon="youtube"></a>
         </div>
 
@@ -110,20 +102,14 @@
             <input id="f-name" name="name" type="text" required autocomplete="name">
           </div>
           <div class="field">
-            <label for="f-phone" data-i18n="contacts.phoneFieldLabel">Phone</label>
-            <input id="f-phone" name="phone" type="tel" required autocomplete="tel">
+            <label for="f-email" data-i18n="contacts.emailFieldLabel">Email</label>
+            <input id="f-email" name="email" type="email" required autocomplete="email">
           </div>
         </div>
 
-        <div class="form-row">
-          <div class="field">
-            <label for="f-email" data-i18n="contacts.emailFieldLabel">Email</label>
-            <input id="f-email" name="email" type="email" autocomplete="email">
-          </div>
-          <div class="field">
-            <label for="f-property" data-i18n="contacts.propertyLabel">Property type</label>
-            <input id="f-property" name="property" type="text" placeholder="House / Apartment / Office">
-          </div>
+        <div class="field">
+          <label for="f-property" data-i18n="contacts.propertyLabel">Property type</label>
+          <input id="f-property" name="property" type="text" placeholder="House / Apartment / Office">
         </div>
 
         <div class="field">
@@ -151,7 +137,6 @@
           <a class="icon-btn" href="#" data-social="instagram" target="_blank" rel="noopener" aria-label="Instagram" data-icon="instagram"></a>
           <a class="icon-btn" href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook" data-icon="facebook"></a>
           <a class="icon-btn" href="#" data-social="telegram" target="_blank" rel="noopener" aria-label="Telegram" data-icon="telegram"></a>
-          <a class="icon-btn" href="#" data-social="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp" data-icon="whatsapp"></a>
         </div>
       </div>
       <div class="footer-col">
@@ -159,7 +144,6 @@
         <ul>
           <li><a href="services.html" data-i18n="nav.services">Services</a></li>
           <li><a href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
-          <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -172,7 +156,6 @@
       <div class="footer-col">
         <h4 data-i18n="footer.getInTouch">Get in touch</h4>
         <ul>
-          <li><a href="tel:" data-contact-phone>+381 60 000 0000</a></li>
           <li><a href="mailto:" data-contact-email>info@homely.example</a></li>
           <li><span data-contact-address>Belgrade, Serbia</span></li>
         </ul>

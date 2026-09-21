@@ -40,9 +40,7 @@ const CONFIG = {
   // 2. КОНТАКТЫ (placeholder — впишите свои)
   // ---------------------------------------------------------
   contact: {
-    phone: "+381 61 1111111",
     telegram: "nikvlad",
-    viberNumber: "381600000000",
     email: "nik@gmail.com",
     addressLine: {
       en: "Belgrade, Serbia",
@@ -66,8 +64,6 @@ const CONFIG = {
     instagram: "https://instagram.com/homely",
     facebook: "https://facebook.com/homely",
     telegram: "https://t.me/homely",
-    whatsapp: "https://wa.me/381600000000",
-    viber: "viber://chat?number=%2B381600000000",
     youtube: "https://youtube.com/@homely"
   },
 
@@ -108,13 +104,6 @@ const CONFIG = {
         description: {
           en: "Real automation scenarios we build on Home Assistant: motion-triggered lighting, leak protection, vacation mode, and more.",
           sr: "Stvarni scenariji automatizacije koje gradimo na Home Assistant-u: osvetljenje na pokret, zaštita od curenja, režim odsustva i drugo."
-        }
-      },
-      portfolio: {
-        title: { en: "Portfolio — Homely", sr: "Portfolio — Homely" },
-        description: {
-          en: "Selected smart home and CCTV projects delivered by Homely across Serbia.",
-          sr: "Odabrani projekti pametnog doma i video nadzora koje je Homely realizovao širom Srbije."
         }
       },
       contacts: {
@@ -451,8 +440,8 @@ const CONFIG = {
       role: { en: "Apartment owner, Novi Sad", sr: "Vlasnica stana, Novi Sad" },
       rating: 5,
       text: {
-        en: "Installed CCTV and smart lighting for our building entrance. Clean cabling, no dashboard confusion, and support actually answers the phone.",
-        sr: "Postavili su video nadzor i pametno osvetljenje za ulaz naše zgrade. Uredna instalacija, jasan sistem i podrška zaista odgovara na poziv."
+        en: "Installed CCTV and smart lighting for our building entrance. Clean cabling, no dashboard confusion, and support actually replies to email.",
+        sr: "Postavili su video nadzor i pametno osvetljenje za ulaz naše zgrade. Uredna instalacija, jasan sistem i podrška zaista odgovara na email."
       }
     },
     {
@@ -511,42 +500,6 @@ const CONFIG = {
         en: "Yes. Wall-mounted panels, physical switches and voice assistants can all be configured alongside or instead of the mobile app.",
         sr: "Da. Zidni paneli, fizički prekidači i glasovni asistenti mogu se podesiti uz mobilnu aplikaciju ili umesto nje."
       }
-    }
-  ],
-
-  // ---------------------------------------------------------
-  // 12. ПОРТФОЛИО (проекты — заглушки)
-  // ---------------------------------------------------------
-  portfolio: [
-    {
-      title: { en: "Family house, Vračar", sr: "Porodična kuća, Vračar" },
-      tag: { en: "Full automation + CCTV", sr: "Puna automatizacija + video nadzor" },
-      img: "assets/img/portfolio-1.svg"
-    },
-    {
-      title: { en: "Apartment building entrance, Novi Sad", sr: "Ulaz stambene zgrade, Novi Sad" },
-      tag: { en: "CCTV + access control", sr: "Video nadzor + kontrola pristupa" },
-      img: "assets/img/portfolio-2.svg"
-    },
-    {
-      title: { en: "Weekend house, Zlatibor", sr: "Vikendica, Zlatibor" },
-      tag: { en: "Vacation mode + leak protection", sr: "Režim odsustva + zaštita od curenja" },
-      img: "assets/img/portfolio-3.svg"
-    },
-    {
-      title: { en: "Small office, Niš", sr: "Mala kancelarija, Niš" },
-      tag: { en: "Lighting + CCTV + climate", sr: "Osvetljenje + video nadzor + klima" },
-      img: "assets/img/portfolio-4.svg"
-    },
-    {
-      title: { en: "Penthouse, Belgrade Waterfront", sr: "Penthaus, Beograd na vodi" },
-      tag: { en: "Premium full-property system", sr: "Premium sistem za ceo objekat" },
-      img: "assets/img/portfolio-5.svg"
-    },
-    {
-      title: { en: "Retail store, Kragujevac", sr: "Maloprodajni objekat, Kragujevac" },
-      tag: { en: "CCTV + smart access", sr: "Video nadzor + pametan pristup" },
-      img: "assets/img/portfolio-6.svg"
     }
   ]
 

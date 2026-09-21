@@ -9,7 +9,6 @@ const UI_STRINGS = {
     services: { en: "Services", sr: "Usluge" },
     pricing: { en: "Pricing", sr: "Cenovnik" },
     automations: { en: "Automations", sr: "Automatizacija" },
-    portfolio: { en: "Portfolio", sr: "Portfolio" },
     faq: { en: "FAQ", sr: "Pitanja" },
     contacts: { en: "Contact", sr: "Kontakt" },
     ctaBtn: { en: "Get a quote", sr: "Zatražite ponudu" }
@@ -67,7 +66,7 @@ const UI_STRINGS = {
     title: { en: "Ready for a quieter, smarter home?", sr: "Spremni za tiši, pametniji dom?" },
     lead: { en: "Tell us about your property and we'll put together a free, no-obligation proposal within 48 hours.", sr: "Recite nam o vašem objektu i pripremićemo besplatnu ponudu bez obaveze u roku od 48 sati." },
     ctaPrimary: { en: "Request a proposal", sr: "Zatražite ponudu" },
-    ctaSecondary: { en: "Message us on WhatsApp", sr: "Pišite nam na WhatsApp" }
+    ctaSecondary: { en: "Email us directly", sr: "Pišite nam direktno na email" }
   },
   servicesPage: {
     eyebrow: { en: "Services", sr: "Usluge" },
@@ -96,11 +95,6 @@ const UI_STRINGS = {
     title: { en: "Logic we build into real homes", sr: "Logika koju ugrađujemo u prave domove" },
     lead: { en: "Each diagram below is a simplified version of an automation running in a Homely-installed system today.", sr: "Svaki dijagram ispod je pojednostavljena verzija automatizacije koja danas radi u sistemu koji je instalirao Homely." }
   },
-  portfolioPage: {
-    eyebrow: { en: "Portfolio", sr: "Portfolio" },
-    title: { en: "Recent projects", sr: "Nedavni projekti" },
-    lead: { en: "A sample of properties across Serbia where we've installed smart home and CCTV systems. Photos are placeholders — replace with real project photos in assets/img.", sr: "Primer objekata širom Srbije gde smo instalirali sisteme pametnog doma i video nadzora. Fotografije su privremene — zamenite ih pravim fotografijama projekata u assets/img." }
-  },
   faqPage: {
     eyebrow: { en: "FAQ", sr: "Česta pitanja" },
     title: { en: "Frequently asked questions", sr: "Često postavljana pitanja" },
@@ -110,13 +104,11 @@ const UI_STRINGS = {
     eyebrow: { en: "Contact", sr: "Kontakt" },
     title: { en: "Let's talk about your property", sr: "Razgovarajmo o vašem objektu" },
     lead: { en: "Fill in the form or reach us directly — a free, no-obligation site visit is the usual first step.", sr: "Popunite formular ili nas kontaktirajte direktno — besplatna poseta objektu bez obaveze je uobičajen prvi korak." },
-    phoneLabel: { en: "Phone", sr: "Telefon" },
     emailLabel: { en: "Email", sr: "Email" },
     addressLabel: { en: "Address", sr: "Adresa" },
     hoursLabel: { en: "Working hours", sr: "Radno vreme" },
     formTitle: { en: "Send us a message", sr: "Pošaljite nam poruku" },
     nameLabel: { en: "Full name", sr: "Ime i prezime" },
-    phoneFieldLabel: { en: "Phone", sr: "Telefon" },
     emailFieldLabel: { en: "Email", sr: "Email" },
     propertyLabel: { en: "Property type", sr: "Tip objekta" },
     messageLabel: { en: "What are you looking for?", sr: "Šta vam je potrebno?" },
