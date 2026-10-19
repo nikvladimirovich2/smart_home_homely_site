@@ -6,7 +6,7 @@
 <title>Contact — Homely</title>
 <meta name="description" content="Get in touch with Homely for a free consultation on smart home or CCTV integration.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://homely.example/contacts.html">
+<link rel="canonical" href="https://homely-smart.netlify.app/contacts.html">
 <meta name="theme-color" content="#0A0D12">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Homely">
@@ -40,6 +40,8 @@
         <button data-lang="en" type="button">EN</button>
         <button data-lang="sr" type="button">SR</button>
       </div>
+      <a class="icon-btn nav-social" href="#" data-social="instagram" target="_blank" rel="noopener" aria-label="Instagram" data-icon="instagram"></a>
+      <a class="icon-btn nav-social" href="#" data-social="telegram" target="_blank" rel="noopener" aria-label="Telegram" data-icon="telegram"></a>
       <button class="icon-btn" data-theme-toggle type="button" aria-label="Toggle theme"><span data-theme-icon></span></button>
       <a href="contacts.html" class="btn btn-primary btn-sm" data-i18n="nav.ctaBtn">Get a quote</a>
       <button class="icon-btn nav-toggle" type="button" aria-label="Menu"><span class="hamburger"><span></span><span></span><span></span></span></button>
@@ -64,14 +66,14 @@
           <span class="icon-btn" data-icon="mail" aria-hidden="true"></span>
           <div>
             <b data-i18n="contacts.emailLabel">Email</b>
-            <span><a href="mailto:" data-contact-email>info@homely.example</a></span>
+            <span><a href="mailto:" data-contact-email>nikvladimirovich2@gmail.com</a></span>
           </div>
         </div>
         <div class="contact-row">
           <span class="icon-btn" data-icon="mapPin" aria-hidden="true"></span>
           <div>
             <b data-i18n="contacts.addressLabel">Address</b>
-            <span data-contact-address>Belgrade, Serbia</span>
+            <span data-contact-address>Niš, Serbia</span>
           </div>
         </div>
         <div class="contact-row">
@@ -82,11 +84,19 @@
           </div>
         </div>
 
-        <div class="social-row">
-          <a class="icon-btn" href="#" data-social="instagram" target="_blank" rel="noopener" aria-label="Instagram" data-icon="instagram"></a>
-          <a class="icon-btn" href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook" data-icon="facebook"></a>
-          <a class="icon-btn" href="#" data-social="telegram" target="_blank" rel="noopener" aria-label="Telegram" data-icon="telegram"></a>
-          <a class="icon-btn" href="#" data-social="youtube" target="_blank" rel="noopener" aria-label="YouTube" data-icon="youtube"></a>
+        <div class="contact-row">
+          <span class="icon-btn" data-icon="telegram" aria-hidden="true"></span>
+          <div>
+            <b data-i18n="contacts.telegramLabel">Telegram</b>
+            <span><a href="#" data-social="telegram" target="_blank" rel="noopener">t.me/smarthome_soul</a></span>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a class="btn btn-ghost" href="#" data-social="instagram" target="_blank" rel="noopener"><span class="btn-ico" data-icon="instagram"></span><span>Instagram</span></a>
+          <a class="btn btn-ghost" href="#" data-social="telegram" target="_blank" rel="noopener"><span class="btn-ico" data-icon="telegram"></span><span>Telegram</span></a>
+          <a class="btn btn-ghost" href="#" data-social="facebook" target="_blank" rel="noopener"><span class="btn-ico" data-icon="facebook"></span><span data-i18n="follow.facebook">Facebook group</span></a>
+          <a class="btn btn-ghost" href="#" data-social="youtube" target="_blank" rel="noopener"><span class="btn-ico" data-icon="youtube"></span><span>YouTube</span></a>
         </div>
 
         <div id="map-embed" class="map-embed"></div>
@@ -118,7 +128,8 @@
         </div>
 
         <button type="submit" class="btn btn-primary btn-block" data-i18n="contacts.submitBtn">Send message</button>
-        <p class="form-note" data-i18n="contacts.formNote">This is a demo form — no data is sent anywhere. Connect it to your own email/CRM endpoint.</p>
+        <a href="#" data-social="telegram" target="_blank" rel="noopener" class="btn btn-ghost btn-block" style="margin-top:10px;" data-i18n="contacts.telegramAlt">Or message us on Telegram</a>
+        <p class="form-note" data-i18n="contacts.formNote">Sending opens your email app with a pre-filled message to us — just hit send there.</p>
         <p id="form-success" class="mono" style="display:none; color:var(--accent); font-size:.85rem;"></p>
       </form>
 
@@ -156,8 +167,8 @@
       <div class="footer-col">
         <h4 data-i18n="footer.getInTouch">Get in touch</h4>
         <ul>
-          <li><a href="mailto:" data-contact-email>info@homely.example</a></li>
-          <li><span data-contact-address>Belgrade, Serbia</span></li>
+          <li><a href="mailto:" data-contact-email>nikvladimirovich2@gmail.com</a></li>
+          <li><span data-contact-address>Niš, Serbia</span></li>
         </ul>
       </div>
     </div>

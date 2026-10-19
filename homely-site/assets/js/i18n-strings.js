@@ -51,10 +51,14 @@ const UI_STRINGS = {
     lead: { en: "Real logic chains from real installs — see the full list on the Automations page.", sr: "Stvarni lanci logike iz stvarnih instalacija — pun spisak pogledajte na stranici Automatizacija." },
     cta: { en: "See all automation examples", sr: "Pogledajte sve primere automatizacije" }
   },
+  social: {
+    soon: { en: "Coming soon", sr: "Uskoro" }
+  },
   pricingHome: {
     eyebrow: { en: "Pricing", sr: "Cene" },
     title: { en: "Straightforward packages", sr: "Jasni paketi" },
-    lead: { en: "Fixed-scope packages for common properties, plus a full price list for custom builds.", sr: "Paketi fiksnog obima za tipične objekte, plus pun cenovnik za prilagođena rešenja." },
+    lead: { en: "Packages for common properties with a starting price — the final cost depends on the devices you choose — plus a full price list for custom builds.", sr: "Paketi za tipične objekte sa početnom cenom — konačna cena zavisi od izabranih uređaja — plus pun cenovnik za prilagođena rešenja." },
+    from: { en: "from", sr: "od" },
     popular: { en: "Most popular", sr: "Najpopularniji" },
     cta: { en: "Choose package", sr: "Izaberite paket" }
   },
@@ -66,7 +70,17 @@ const UI_STRINGS = {
     title: { en: "Ready for a quieter, smarter home?", sr: "Spremni za tiši, pametniji dom?" },
     lead: { en: "Tell us about your property and we'll put together a free, no-obligation proposal within 48 hours.", sr: "Recite nam o vašem objektu i pripremićemo besplatnu ponudu bez obaveze u roku od 48 sati." },
     ctaPrimary: { en: "Request a proposal", sr: "Zatražite ponudu" },
-    ctaSecondary: { en: "Email us directly", sr: "Pišite nam direktno na email" }
+    ctaSecondary: { en: "Email us directly", sr: "Pišite nam direktno na email" },
+    ctaTelegram: { en: "Message us on Telegram", sr: "Pišite nam na Telegram" }
+  },
+  follow: {
+    title: { en: "Follow our projects", sr: "Pratite naše projekte" },
+    leadDefault: { en: "Real installations, Home Assistant tips and updates — join us on social media.", sr: "Stvarne instalacije, saveti za Home Assistant i novosti — pratite nas na društvenim mrežama." },
+    leadServices: { en: "See recent installations and ask about any service on Instagram and Telegram.", sr: "Pogledajte nedavne instalacije i pitajte o bilo kojoj usluzi na Instagramu i Telegramu." },
+    leadPricing: { en: "Questions about prices or devices? Ask in our Telegram discussion or see recent installs on Instagram.", sr: "Pitanja o cenama ili uređajima? Pitajte u našoj Telegram diskusiji ili pogledajte nedavne instalacije na Instagramu." },
+    leadAutomations: { en: "More automation examples, demos and breakdowns are published on Instagram and Telegram.", sr: "Više primera automatizacije, demonstracija i analiza objavljujemo na Instagramu i Telegramu." },
+    leadFaq: { en: "Didn't find your answer? Ask in our Telegram discussion — it's open to everyone.", sr: "Niste našli odgovor? Pitajte u našoj Telegram diskusiji — otvorena je za sve." },
+    facebook: { en: "Facebook group", sr: "Facebook grupa" }
   },
   servicesPage: {
     eyebrow: { en: "Services", sr: "Usluge" },
@@ -86,7 +100,7 @@ const UI_STRINGS = {
   pricingPage: {
     eyebrow: { en: "Pricing", sr: "Cenovnik" },
     title: { en: "Packages & full price list", sr: "Paketi i pun cenovnik" },
-    lead: { en: "Prices below are typical ranges for the Belgrade/Novi Sad area and depend on property size and device selection. Final pricing is always confirmed after a free site visit.", sr: "Cene ispod su tipični rasponi za Beograd/Novi Sad i zavise od veličine objekta i izbora uređaja. Konačna cena se uvek potvrđuje nakon besplatne posete objektu." },
+    lead: { en: "Prices below are typical ranges in Serbia and depend on property size and device selection. Final pricing is always confirmed after a free site visit.", sr: "Cene ispod su tipični rasponi u Srbiji i zavise od veličine objekta i izbora uređaja. Konačna cena se uvek potvrđuje nakon besplatne posete objektu." },
     priceListTitle: { en: "Full price list", sr: "Pun cenovnik" },
     priceListLead: { en: "Building something custom? Here's what individual components typically cost.", sr: "Gradite nešto prilagođeno? Evo koliko obično koštaju pojedinačne komponente." }
   },
@@ -107,6 +121,8 @@ const UI_STRINGS = {
     emailLabel: { en: "Email", sr: "Email" },
     addressLabel: { en: "Address", sr: "Adresa" },
     hoursLabel: { en: "Working hours", sr: "Radno vreme" },
+    telegramLabel: { en: "Telegram", sr: "Telegram" },
+    telegramAlt: { en: "Or message us on Telegram", sr: "Ili nam pišite na Telegram" },
     formTitle: { en: "Send us a message", sr: "Pošaljite nam poruku" },
     nameLabel: { en: "Full name", sr: "Ime i prezime" },
     emailFieldLabel: { en: "Email", sr: "Email" },
@@ -127,7 +143,8 @@ const UI_STRINGS = {
     eyebrow: { en: "404", sr: "404" },
     title: { en: "This page went offline", sr: "Ova stranica je van mreže" },
     lead: { en: "Like a sensor with a flat battery — the page you're looking for isn't reporting in. Let's get you back home.", sr: "Kao senzor sa praznom baterijom — stranica koju tražite se ne javlja. Vratimo vas na početnu." },
-    cta: { en: "Back to homepage", sr: "Nazad na početnu" }
+    cta: { en: "Back to homepage", sr: "Nazad na početnu" },
+    telegram: { en: "Ask us on Telegram", sr: "Pitajte nas na Telegramu" }
   },
   common: {
     backToTop: { en: "Back to top", sr: "Nazad na vrh" }

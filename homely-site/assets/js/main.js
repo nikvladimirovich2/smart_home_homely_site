@@ -131,7 +131,7 @@
         addressCountry: "RS"
       },
       url: CONFIG.seo.siteUrl,
-      sameAs: Object.values(CONFIG.social)
+      sameAs: Object.values(CONFIG.social).filter(Boolean)
     };
     script.textContent = JSON.stringify(base, null, 2);
   }
@@ -153,7 +153,16 @@
     const socialTargets = $$("[data-social]");
     socialTargets.forEach((el) => {
       const key = el.dataset.social;
-      if (CONFIG.social[key]) el.href = CONFIG.social[key];
+      if (CONFIG.social[key]) {
+        el.href = CONFIG.social[key];
+      } else {
+        // Ссылки нет (например, YouTube) — серая неактивная иконка
+        el.removeAttribute("href");
+        el.removeAttribute("target");
+        el.classList.add("disabled");
+        el.setAttribute("aria-disabled", "true");
+        el.setAttribute("title", t(UI_STRINGS.social.soon));
+      }
     });
 
     // Быстрая ссылка на email (кнопки "Email us directly")
@@ -212,6 +221,7 @@
         <div class="package-name">${t(p.name)}</div>
         <p class="package-desc">${t(p.description)}</p>
         <div class="package-price">
+          <span class="from">${t(UI_STRINGS.pricingHome.from)}</span>
           <span class="amount">${p.currency}${p.price}</span>
           <span class="period">/ ${t(p.period)}</span>
         </div>

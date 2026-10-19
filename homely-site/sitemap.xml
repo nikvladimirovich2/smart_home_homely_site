@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://homely.example/</loc>
+    <loc>https://homely-smart.netlify.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://homely.example/services.html</loc>
+    <loc>https://homely-smart.netlify.app/services.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://homely.example/pricing.html</loc>
+    <loc>https://homely-smart.netlify.app/pricing.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://homely.example/automations.html</loc>
+    <loc>https://homely-smart.netlify.app/automations.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://homely.example/faq.html</loc>
+    <loc>https://homely-smart.netlify.app/faq.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://homely.example/contacts.html</loc>
+    <loc>https://homely-smart.netlify.app/contacts.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

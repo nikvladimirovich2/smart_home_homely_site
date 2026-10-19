@@ -40,42 +40,42 @@ const CONFIG = {
   // 2. КОНТАКТЫ (placeholder — впишите свои)
   // ---------------------------------------------------------
   contact: {
-    telegram: "nikvlad",
-    email: "nik@gmail.com",
+    telegram: "https://t.me/smarthome_soul", // канал; из него можно перейти в чат обсуждения
+    email: "nikvladimirovich2@gmail.com",
     addressLine: {
-      en: "Belgrade, Serbia",
-      sr: "Beograd, Srbija"
+      en: "Niš, Serbia",
+      sr: "Niš, Srbija"
     },
     addressFull: {
-      en: "Nis, Serbia",
-      sr: "Bulevar primer 1, 11000 Beograd"
+      en: "Niš, Serbia",
+      sr: "Niš, Srbija"
     },
     workingHours: {
       en: "Mon–Sat, 09:00–19:00",
       sr: "Pon–Sub, 09:00–19:00"
     },
-    mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7340.950535970596!2d20.46741382355035!3d44.81497812477127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aaf8eb12313%3A0xb5d1ff9ef988d573!2z0J3QsNGA0L7QtNC90LDRjyDRgdC60YPQv9GJ0LjQvdCwINCg0LXRgdC_0YPQsdC70LjQutC4INCh0LXRgNCx0LjRjw!5e0!3m2!1sru!2srs!4v1787060670424!5m2!1sru!2srs" // вставьте ссылку Google Maps embed, если нужна карта на странице контактов
+    mapEmbedSrc: "https://www.google.com/maps?q=Ni%C5%A1,+Serbia&output=embed" // карта Ниша; можно заменить на точный адрес
   },
 
   // ---------------------------------------------------------
   // 3. СОЦСЕТИ И МЕССЕНДЖЕРЫ
   // ---------------------------------------------------------
   social: {
-    instagram: "https://instagram.com/homely",
-    facebook: "https://facebook.com/homely",
-    telegram: "https://t.me/homely",
-    youtube: "https://youtube.com/@homely"
+    instagram: "https://www.instagram.com/engineersmarthome?exln=YjV6dHF2bTl1ZHJ0",
+    facebook: "https://fb.me/g/kBNzn8M65/JlnvYZSd?ref=share", // ссылка на группу
+    telegram: "https://t.me/smarthome_soul",
+    youtube: "" // канала пока нет — иконка отображается серой и неактивной
   },
 
   // ---------------------------------------------------------
   // 4. SEO / OPEN GRAPH ПО СТРАНИЦАМ
   // ---------------------------------------------------------
   seo: {
-    siteUrl: "https://homely.example",
+    siteUrl: "https://homely-smart.netlify.app",
     ogImage: "assets/img/og-cover.svg",
     defaultKeywords: {
-      en: "smart home Serbia, Home Assistant integrator, CCTV installation Belgrade, home automation, video surveillance",
-      sr: "pametan dom Srbija, Home Assistant integrator, video nadzor Beograd, kućna automatizacija"
+      en: "smart home Serbia, Home Assistant integrator, CCTV installation Niš, home automation, video surveillance",
+      sr: "pametan dom Srbija, Home Assistant integrator, video nadzor Niš, kućna automatizacija"
     },
     pages: {
       index: {
