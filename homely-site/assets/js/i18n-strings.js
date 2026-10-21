@@ -1,7 +1,7 @@
 /**
  * UI_STRINGS — статичные тексты интерфейса (не данные из CONFIG):
  * навигация, заголовки секций, кнопки, подвал.
- * Используется через data-i18n="section.key" в HTML.
+ * Подставляются в HTML при сборке скриптом tools/build-site.js.
  */
 const UI_STRINGS = {
   nav: {
@@ -144,9 +144,36 @@ const UI_STRINGS = {
     title: { en: "This page went offline", sr: "Ova stranica je van mreže" },
     lead: { en: "Like a sensor with a flat battery — the page you're looking for isn't reporting in. Let's get you back home.", sr: "Kao senzor sa praznom baterijom — stranica koju tražite se ne javlja. Vratimo vas na početnu." },
     cta: { en: "Back to homepage", sr: "Nazad na početnu" },
-    telegram: { en: "Ask us on Telegram", sr: "Pitajte nas na Telegramu" }
+    telegram: { en: "Ask us on Telegram", sr: "Pitajte nas na Telegramu" },
+    english: { en: "English version", sr: "English version" }
+  },
+  servicePage: {
+    includesTitle: { en: "What's included", sr: "Šta je uključeno" },
+    pricesTitle: { en: "Typical prices", sr: "Okvirne cene" },
+    pricesNote: { en: "Indicative prices — the final cost depends on the devices and the property.", sr: "Cene su okvirne — konačna cena zavisi od izabranih uređaja i objekta." },
+    pricesLink: { en: "See the full price list", sr: "Pogledajte pun cenovnik" },
+    automationsTitle: { en: "Examples of what it can do", sr: "Primeri šta sve može" },
+    faqTitle: { en: "Frequently asked questions", sr: "Česta pitanja" },
+    otherTitle: { en: "Other services", sr: "Ostale usluge" }
+  },
+  region: {
+    homeEyebrow: { en: "Niš and surroundings", sr: "Niš i okolina" },
+    homeTitle: { en: "Smart homes in Niš and the surrounding area", sr: "Pametna kuća u Nišu i okolini" },
+    homeLead: { en: "We're based in Niš — the site visit is free and support after installation is close by. For larger projects we work across Serbia.", sr: "Iz Niša smo — obilazak objekta je besplatan, a podrška posle ugradnje je blizu. Za veće projekte radimo i u ostatku Srbije." },
+    homeCta: { en: "Smart home in Niš", sr: "Pametna kuća u Nišu" },
+    servicesTitle: { en: "Services in Niš", sr: "Usluge u Nišu" },
+    footerLink: { en: "Smart home Niš", sr: "Pametna kuća Niš" }
   },
   common: {
-    backToTop: { en: "Back to top", sr: "Nazad na vrh" }
+    backToTop: { en: "Back to top", sr: "Nazad na vrh" },
+    skipToContent: { en: "Skip to content", sr: "Preskoči na sadržaj" },
+    menu: { en: "Menu", sr: "Meni" },
+    themeToggle: { en: "Toggle theme", sr: "Promeni temu" },
+    language: { en: "Language", sr: "Jezik" },
+    learnMore: { en: "Learn more", sr: "Saznajte više" },
+    breadcrumb: { en: "Breadcrumb", sr: "Putanja" },
+    whyImgAlt: { en: "Local Home Assistant server illustration", sr: "Ilustracija lokalnog Home Assistant servera" },
+    propertyPlaceholder: { en: "House / Apartment / Office", sr: "Kuća / Stan / Kancelarija" },
+    mapTitle: { en: "Map — Niš, Serbia", sr: "Mapa — Niš, Srbija" }
   }
 };

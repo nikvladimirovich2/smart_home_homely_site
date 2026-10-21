@@ -1,33 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://homely-smart.netlify.app/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/"/>
   </url>
   <url>
     <loc>https://homely-smart.netlify.app/services.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services.html"/>
   </url>
   <url>
     <loc>https://homely-smart.netlify.app/pricing.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/pricing.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/pricing.html"/>
   </url>
   <url>
     <loc>https://homely-smart.netlify.app/automations.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/automations.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/automations.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/automations.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/automations.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/automations.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/automations.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/automations.html"/>
   </url>
   <url>
     <loc>https://homely-smart.netlify.app/faq.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/faq.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/faq.html"/>
   </url>
   <url>
     <loc>https://homely-smart.netlify.app/contacts.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/contacts.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/contacts.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/pametna-kuca-nis.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/pametna-kuca-nis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/smart-home-nis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/pametna-kuca-nis.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/smart-home-nis.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/pametna-kuca-nis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/smart-home-nis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/pametna-kuca-nis.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/services/pametno-osvetljenje.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/pametno-osvetljenje.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/smart-lighting.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/pametno-osvetljenje.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/services/smart-lighting.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/pametno-osvetljenje.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/smart-lighting.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/pametno-osvetljenje.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/services/video-nadzor.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/video-nadzor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/cctv-video-surveillance.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/video-nadzor.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/services/cctv-video-surveillance.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/video-nadzor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/cctv-video-surveillance.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/video-nadzor.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/services/pametno-grejanje-i-klima.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/pametno-grejanje-i-klima.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/smart-heating-climate-control.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/pametno-grejanje-i-klima.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/services/smart-heating-climate-control.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/pametno-grejanje-i-klima.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/smart-heating-climate-control.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/pametno-grejanje-i-klima.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/services/kontrola-pristupa.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/kontrola-pristupa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/access-control.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/kontrola-pristupa.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/services/access-control.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/kontrola-pristupa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/access-control.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/kontrola-pristupa.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/services/mreza-i-wifi.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/mreza-i-wifi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/networking-wifi.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/mreza-i-wifi.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/services/networking-wifi.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/mreza-i-wifi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/networking-wifi.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/mreza-i-wifi.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/services/home-assistant-instalacija.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/home-assistant-instalacija.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/home-assistant-installation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/home-assistant-instalacija.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/services/home-assistant-installation.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/home-assistant-instalacija.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/home-assistant-installation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/home-assistant-instalacija.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/services/zastita-od-curenja-vode.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/zastita-od-curenja-vode.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/water-leak-protection.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/zastita-od-curenja-vode.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/services/water-leak-protection.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/zastita-od-curenja-vode.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/water-leak-protection.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/zastita-od-curenja-vode.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/services/odrzavanje-i-podrska.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/odrzavanje-i-podrska.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/maintenance-support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/odrzavanje-i-podrska.html"/>
+  </url>
+  <url>
+    <loc>https://homely-smart.netlify.app/en/services/maintenance-support.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://homely-smart.netlify.app/services/odrzavanje-i-podrska.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homely-smart.netlify.app/en/services/maintenance-support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://homely-smart.netlify.app/services/odrzavanje-i-podrska.html"/>
   </url>
 </urlset>

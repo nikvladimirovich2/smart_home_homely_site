@@ -6,8 +6,9 @@
  *  название компании, контакты, цены, пакеты, услуги,
  *  FAQ, отзывы, автоматизации, бренды, соцсети, SEO.
  *
- *  HTML-файлы НЕ содержат зашитых цифр/контактов — всё
- *  подставляется скриптом assets/js/main.js из этого объекта.
+ *  HTML-страницы генерируются из этого файла скриптом
+ *  tools/build-site.js (запуск: node tools/build-site.js).
+ *  После правки этого файла — перезапустите сборку.
  *
  *  Инструкция по редактированию — см. README.md
  * ============================================================
@@ -33,7 +34,13 @@ const CONFIG = {
     heroSubtitle: {
       en: "We design, install and support local, privacy-respecting smart home and CCTV systems for homes and businesses across Serbia — built on open standards like Home Assistant, not locked to one manufacturer's cloud.",
       sr: "Projektujemo, instaliramo i održavamo lokalne sisteme pametnog doma i video nadzora za domove i firme širom Srbije — zasnovane na otvorenim standardima poput Home Assistant-a, bez zavisnosti od tuđeg oblaka."
-    }
+    },
+    // Три факта под заголовком на главной
+    heroFacts: [
+      { title: "Home Assistant", text: { en: "The brain — automation & control", sr: "Mozak — automatizacija i upravljanje" } },
+      { title: "Zigbee", text: { en: "The nervous system — sensors & devices", sr: "Nervni sistem — senzori i uređaji" } },
+      { title: "Frigate", text: { en: "The eyes — intelligent security", sr: "Oči — pametna zaštita" } }
+    ]
   },
 
   // ---------------------------------------------------------
@@ -73,51 +80,51 @@ const CONFIG = {
   seo: {
     siteUrl: "https://homely-smart.netlify.app",
     ogImage: "assets/img/og-cover.svg",
-    defaultKeywords: {
-      en: "smart home Serbia, Home Assistant integrator, CCTV installation Niš, home automation, video surveillance",
-      sr: "pametan dom Srbija, Home Assistant integrator, video nadzor Niš, kućna automatizacija"
-    },
+    // Подтверждение владения сайтом в Google Search Console
+    googleSiteVerification: "7iob2t19lpfKmrOElSlKmvdwsWTPRnaEz8b1yM8SKlc",
+    // Тексты <title> и description для основных страниц.
+    // Для страниц услуг и страницы Ниша — см. assets/js/pages-content.js
     pages: {
       index: {
-        title: { en: "Homely — Smart Home & CCTV Integration in Serbia", sr: "Homely — Pametan dom i video nadzor u Srbiji" },
+        title: { en: "Smart Home & CCTV Installation in Niš, Serbia | Homely", sr: "Pametna kuća i video nadzor u Nišu i Srbiji | Homely" },
         description: {
-          en: "Local smart home and CCTV integrators in Serbia. Home Assistant-based automation, professional installation, and long-term support — no forced cloud subscriptions.",
-          sr: "Lokalni integratori pametnog doma i video nadzora u Srbiji. Automatizacija zasnovana na Home Assistant-u, profesionalna instalacija i dugoročna podrška — bez prisilnih pretplata na oblak."
+          en: "Smart home and CCTV installation in Niš and across Serbia: smart lighting, cameras, heating and locks built on Home Assistant. Works without the internet, no forced subscriptions.",
+          sr: "Instalacija pametne kuće i video nadzora u Nišu i Srbiji: pametno osvetljenje, kamere, grejanje i brave na Home Assistant-u. Radi i bez interneta, bez obaveznih pretplata."
         }
       },
       services: {
-        title: { en: "Services — Homely", sr: "Usluge — Homely" },
+        title: { en: "Smart home & CCTV services | Homely", sr: "Usluge pametne kuće i video nadzora | Homely" },
         description: {
-          en: "From lighting and climate to access control and CCTV — explore the smart home and surveillance services Homely designs and installs.",
-          sr: "Od osvetljenja i klime do kontrole pristupa i video nadzora — pogledajte usluge koje Homely projektuje i instalira."
+          en: "From lighting and climate to access control and CCTV — explore the smart home and surveillance services Homely designs and installs in Niš and Serbia.",
+          sr: "Od osvetljenja i grejanja do kontrole pristupa i video nadzora — pogledajte usluge pametne kuće koje Homely projektuje i ugrađuje u Nišu i Srbiji."
         }
       },
       pricing: {
-        title: { en: "Pricing — Homely", sr: "Cenovnik — Homely" },
+        title: { en: "Smart home & CCTV prices — packages and price list | Homely", sr: "Cene pametne kuće i video nadzora — paketi i cenovnik | Homely" },
         description: {
           en: "Transparent packages and a detailed price list for smart home automation and CCTV installation in Serbia.",
-          sr: "Transparentni paketi i detaljan cenovnik za automatizaciju pametnog doma i instalaciju video nadzora u Srbiji."
+          sr: "Koliko košta pametna kuća? Transparentni paketi i detaljan cenovnik za automatizaciju doma i ugradnju video nadzora u Srbiji."
         }
       },
       automations: {
-        title: { en: "Automation examples — Homely", sr: "Primeri automatizacije — Homely" },
+        title: { en: "Smart home automation examples (Home Assistant) | Homely", sr: "Primeri automatizacije pametne kuće (Home Assistant) | Homely" },
         description: {
           en: "Real automation scenarios we build on Home Assistant: motion-triggered lighting, leak protection, vacation mode, and more.",
-          sr: "Stvarni scenariji automatizacije koje gradimo na Home Assistant-u: osvetljenje na pokret, zaštita od curenja, režim odsustva i drugo."
+          sr: "Stvarni scenariji automatizacije pametne kuće koje gradimo na Home Assistant-u: osvetljenje na pokret, zaštita od curenja, režim odsustva i drugo."
         }
       },
       contacts: {
-        title: { en: "Contact — Homely", sr: "Kontakt — Homely" },
+        title: { en: "Contact — free smart home consultation | Homely", sr: "Kontakt — besplatna konsultacija za pametnu kuću | Homely" },
         description: {
-          en: "Get in touch with Homely for a free consultation on smart home or CCTV integration.",
-          sr: "Kontaktirajte Homely za besplatnu konsultaciju o integraciji pametnog doma ili video nadzora."
+          en: "Get in touch with Homely in Niš for a free consultation on smart home or CCTV installation.",
+          sr: "Kontaktirajte Homely iz Niša za besplatnu konsultaciju o pametnoj kući ili ugradnji video nadzora."
         }
       },
       faq: {
-        title: { en: "FAQ — Homely", sr: "Česta pitanja — Homely" },
+        title: { en: "Smart home & CCTV FAQ | Homely", sr: "Česta pitanja o pametnoj kući i video nadzoru | Homely" },
         description: {
           en: "Answers to common questions about smart home automation and CCTV installation with Homely.",
-          sr: "Odgovori na česta pitanja o automatizaciji pametnog doma i instalaciji video nadzora sa Homely."
+          sr: "Odgovori na česta pitanja o pametnoj kući, automatizaciji i ugradnji video nadzora."
         }
       }
     }
@@ -126,8 +133,11 @@ const CONFIG = {
   // ---------------------------------------------------------
   // 5. УСЛУГИ
   // ---------------------------------------------------------
+  // id — ключ текста страницы в pages-content.js; slug — адрес страницы услуги
   services: [
     {
+      id: "lighting",
+      slug: { sr: "pametno-osvetljenje", en: "smart-lighting" },
       icon: "lightbulb",
       title: { en: "Smart lighting", sr: "Pametno osvetljenje" },
       desc: {
@@ -136,6 +146,8 @@ const CONFIG = {
       }
     },
     {
+      id: "cctv",
+      slug: { sr: "video-nadzor", en: "cctv-video-surveillance" },
       icon: "camera",
       title: { en: "CCTV & video surveillance", sr: "Video nadzor" },
       desc: {
@@ -144,6 +156,8 @@ const CONFIG = {
       }
     },
     {
+      id: "climate",
+      slug: { sr: "pametno-grejanje-i-klima", en: "smart-heating-climate-control" },
       icon: "thermometer",
       title: { en: "Climate control", sr: "Kontrola klime" },
       desc: {
@@ -152,6 +166,8 @@ const CONFIG = {
       }
     },
     {
+      id: "access",
+      slug: { sr: "kontrola-pristupa", en: "access-control" },
       icon: "lock",
       title: { en: "Access control", sr: "Kontrola pristupa" },
       desc: {
@@ -160,6 +176,8 @@ const CONFIG = {
       }
     },
     {
+      id: "network",
+      slug: { sr: "mreza-i-wifi", en: "networking-wifi" },
       icon: "network",
       title: { en: "Networking & Wi-Fi", sr: "Mreža i Wi-Fi" },
       desc: {
@@ -168,6 +186,8 @@ const CONFIG = {
       }
     },
     {
+      id: "homeassistant",
+      slug: { sr: "home-assistant-instalacija", en: "home-assistant-installation" },
       icon: "shield",
       title: { en: "Local-first automation", sr: "Automatizacija bez oblaka" },
       desc: {
@@ -176,6 +196,8 @@ const CONFIG = {
       }
     },
     {
+      id: "leak",
+      slug: { sr: "zastita-od-curenja-vode", en: "water-leak-protection" },
       icon: "droplet",
       title: { en: "Leak & flood protection", sr: "Zaštita od curenja vode" },
       desc: {
@@ -184,6 +206,8 @@ const CONFIG = {
       }
     },
     {
+      id: "support",
+      slug: { sr: "odrzavanje-i-podrska", en: "maintenance-support" },
       icon: "wrench",
       title: { en: "Maintenance & support", sr: "Održavanje i podrška" },
       desc: {
@@ -290,45 +314,47 @@ const CONFIG = {
   // ---------------------------------------------------------
   // 7. ПОЛНЫЙ ПРАЙС (по категориям)
   // ---------------------------------------------------------
+  // id позиции используется на страницах услуг (блок «Okvirne cene»)
+  // и в текстах как {{price:id}} — так цена в тексте всегда совпадает с прайсом.
   priceList: [
     {
       category: { en: "Lighting", sr: "Osvetljenje" },
       items: [
-        { name: { en: "Smart light point (per switch/bulb)", sr: "Pametna tačka osvetljenja (prekidač/sijalica)" }, price: "35–60", currency: "€" },
-        { name: { en: "Motion sensor", sr: "Senzor pokreta" }, price: "25–45", currency: "€" },
-        { name: { en: "Scene controller / smart wall panel", sr: "Kontroler scena / pametni panel" }, price: "60–120", currency: "€" }
+        { id: "light-point", name: { en: "Smart light point (per switch/bulb)", sr: "Pametna tačka osvetljenja (prekidač/sijalica)" }, price: "35–60", currency: "€" },
+        { id: "motion-sensor", name: { en: "Motion sensor", sr: "Senzor pokreta" }, price: "25–45", currency: "€" },
+        { id: "scene-panel", name: { en: "Scene controller / smart wall panel", sr: "Kontroler scena / pametni panel" }, price: "60–120", currency: "€" }
       ]
     },
     {
       category: { en: "CCTV & video surveillance", sr: "Video nadzor" },
       items: [
-        { name: { en: "Indoor camera, installed", sr: "Unutrašnja kamera, instalirana" }, price: "70–110", currency: "€" },
-        { name: { en: "Outdoor camera (IP66), installed", sr: "Spoljna kamera (IP66), instalirana" }, price: "110–180", currency: "€" },
-        { name: { en: "Local NVR / storage setup", sr: "Lokalni NVR / podešavanje skladišta" }, price: "150–300", currency: "€" }
+        { id: "cam-indoor", name: { en: "Indoor camera, installed", sr: "Unutrašnja kamera, instalirana" }, price: "70–110", currency: "€" },
+        { id: "cam-outdoor", name: { en: "Outdoor camera (IP66), installed", sr: "Spoljna kamera (IP66), instalirana" }, price: "110–180", currency: "€" },
+        { id: "nvr", name: { en: "Local NVR / storage setup", sr: "Lokalni NVR / podešavanje skladišta" }, price: "150–300", currency: "€" }
       ]
     },
     {
       category: { en: "Climate & sensors", sr: "Klima i senzori" },
       items: [
-        { name: { en: "Smart thermostat / TRV", sr: "Pametni termostat / TRV ventil" }, price: "60–100", currency: "€" },
-        { name: { en: "Temperature & humidity sensor", sr: "Senzor temperature i vlažnosti" }, price: "20–35", currency: "€" },
-        { name: { en: "Water leak sensor + shut-off valve", sr: "Senzor curenja + zaporni ventil" }, price: "90–160", currency: "€" }
+        { id: "thermostat", name: { en: "Smart thermostat / TRV", sr: "Pametni termostat / TRV ventil" }, price: "60–100", currency: "€" },
+        { id: "temp-sensor", name: { en: "Temperature & humidity sensor", sr: "Senzor temperature i vlažnosti" }, price: "20–35", currency: "€" },
+        { id: "leak-valve", name: { en: "Water leak sensor + shut-off valve", sr: "Senzor curenja + zaporni ventil" }, price: "90–160", currency: "€" }
       ]
     },
     {
       category: { en: "Access & network", sr: "Pristup i mreža" },
       items: [
-        { name: { en: "Smart lock, installed", sr: "Pametna brava, instalirana" }, price: "150–260", currency: "€" },
-        { name: { en: "Video intercom", sr: "Video interfon" }, price: "180–320", currency: "€" },
-        { name: { en: "Network setup (per access point)", sr: "Podešavanje mreže (po pristupnoj tački)" }, price: "50–90", currency: "€" }
+        { id: "smart-lock", name: { en: "Smart lock, installed", sr: "Pametna brava, instalirana" }, price: "150–260", currency: "€" },
+        { id: "intercom", name: { en: "Video intercom", sr: "Video interfon" }, price: "180–320", currency: "€" },
+        { id: "network-ap", name: { en: "Network setup (per access point)", sr: "Podešavanje mreže (po pristupnoj tački)" }, price: "50–90", currency: "€" }
       ]
     },
     {
       category: { en: "Software & support", sr: "Softver i podrška" },
       items: [
-        { name: { en: "Home Assistant base configuration", sr: "Osnovna konfiguracija Home Assistant-a" }, price: "150", currency: "€" },
-        { name: { en: "Custom automation scenario", sr: "Prilagođeni scenario automatizacije" }, price: "20–40", currency: "€" },
-        { name: { en: "Monthly remote monitoring", sr: "Mesečni daljinski nadzor" }, price: "15", currency: "€" }
+        { id: "ha-base", name: { en: "Home Assistant base configuration", sr: "Osnovna konfiguracija Home Assistant-a" }, price: "150", currency: "€" },
+        { id: "automation", name: { en: "Custom automation scenario", sr: "Prilagođeni scenario automatizacije" }, price: "20–40", currency: "€" },
+        { id: "monitoring", name: { en: "Monthly remote monitoring", sr: "Mesečni daljinski nadzor" }, price: "15", currency: "€" }
       ]
     }
   ],
