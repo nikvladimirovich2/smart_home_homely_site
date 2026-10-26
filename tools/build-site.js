@@ -1044,6 +1044,24 @@ ${urls.join("\n")}
 `;
 }
 
+/**
+ * Netlify отдаёт каждую страницу и как /page.html, и как /page (без
+ * расширения) — Google видит дубли и пишет «Вариант страницы с тегом
+ * canonical». Перенаправляем адрес без .html на канонический (301),
+ * чтобы у каждой страницы был ровно один рабочий адрес.
+ * "!" — принудительно: иначе Netlify игнорирует правило, когда по
+ * адресу без расширения он сам находит файл.
+ */
+function buildRedirects(pages) {
+  const lines = [];
+  pages.forEach((page) => LANGS.forEach((lang) => {
+    const p = page.paths[lang];
+    if (/(^|\/)index\.html$/.test(p)) return; // главные страницы уже на "/" и "/en/"
+    lines.push(`/${p.replace(/\.html$/, "")}  /${p}  301!`);
+  }));
+  return `# Генерируется tools/build-site.js — не редактируйте вручную.\n# Адрес без .html → канонический адрес страницы.\n${lines.join("\n")}\n`;
+}
+
 function main() {
   // Полностью сгенерированные папки — очищаем, чтобы не оставались старые страницы
   ["en", "services"].forEach((dir) => fs.rmSync(path.join(SITE_DIR, dir), { recursive: true, force: true }));
@@ -1053,6 +1071,7 @@ function main() {
   buildPage(PAGE_404, "sr", { absolute: true });
 
   writePage("sitemap.xml", buildSitemap(indexable));
+  writePage("_redirects", buildRedirects(indexable));
   writePage("robots.txt", `User-agent: *\nAllow: /\nDisallow: /404.html\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
   // Защита от опечаток: в латинском тексте не должно быть кириллицы

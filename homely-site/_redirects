@@ -1,0 +1,30 @@
+# Генерируется tools/build-site.js — не редактируйте вручную.
+# Адрес без .html → канонический адрес страницы.
+/services  /services.html  301!
+/en/services  /en/services.html  301!
+/pricing  /pricing.html  301!
+/en/pricing  /en/pricing.html  301!
+/automations  /automations.html  301!
+/en/automations  /en/automations.html  301!
+/faq  /faq.html  301!
+/en/faq  /en/faq.html  301!
+/contacts  /contacts.html  301!
+/en/contacts  /en/contacts.html  301!
+/pametna-kuca-nis  /pametna-kuca-nis.html  301!
+/en/smart-home-nis  /en/smart-home-nis.html  301!
+/services/pametno-osvetljenje  /services/pametno-osvetljenje.html  301!
+/en/services/smart-lighting  /en/services/smart-lighting.html  301!
+/services/video-nadzor  /services/video-nadzor.html  301!
+/en/services/cctv-video-surveillance  /en/services/cctv-video-surveillance.html  301!
+/services/pametno-grejanje-i-klima  /services/pametno-grejanje-i-klima.html  301!
+/en/services/smart-heating-climate-control  /en/services/smart-heating-climate-control.html  301!
+/services/kontrola-pristupa  /services/kontrola-pristupa.html  301!
+/en/services/access-control  /en/services/access-control.html  301!
+/services/mreza-i-wifi  /services/mreza-i-wifi.html  301!
+/en/services/networking-wifi  /en/services/networking-wifi.html  301!
+/services/home-assistant-instalacija  /services/home-assistant-instalacija.html  301!
+/en/services/home-assistant-installation  /en/services/home-assistant-installation.html  301!
+/services/zastita-od-curenja-vode  /services/zastita-od-curenja-vode.html  301!
+/en/services/water-leak-protection  /en/services/water-leak-protection.html  301!
+/services/odrzavanje-i-podrska  /services/odrzavanje-i-podrska.html  301!
+/en/services/maintenance-support  /en/services/maintenance-support.html  301!
